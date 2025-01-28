@@ -2,10 +2,14 @@
 package main
 
 import (
+	"embed"
 	"fmt"
 	"log"
 	"plugin"
 )
+
+//go:embed myplugin.so
+var store embed.FS
 
 func main() {
 	// Load the plugin

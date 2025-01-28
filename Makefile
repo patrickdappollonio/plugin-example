@@ -15,4 +15,4 @@ $(APP_NAME): $(APP_SOURCE) $(PLUGIN_NAME)
 	go build -o $(OUTPUT)/$(APP_NAME) $(APP_SOURCE)
 
 clean:
-	rm -f $(OUTPUT)/
+	rm -rf $(OUTPUT)/
